@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "fraudrecord"
+version = "2022.10.22"
+description = "FraudRecord API client"
+license = "BSD-2-Clause-Patent"
+authors = ["Yana Luna-Terra <yana@riseup.net>"]
+readme = "README.md"
+repository = "https://github.com/yanalunaterra/fraudrecord-python"
+classifiers = [
+    "Topic :: Internet :: WWW/HTTP"
+]
+packages = [
+    { include = "fraudrecord" }
+]
+
+[tool.poetry.dependencies]
+aiohttp = { version = "^3.8", optional = true }
+pydantic = "^1.10"
+python = "^3.10"
+
+[tool.poetry.extras]
+aio = ["aiohttp"]
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
