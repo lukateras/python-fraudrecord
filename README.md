@@ -148,7 +148,7 @@ Blocking FraudRecord query API client.
 
 Non-blocking FraudRecord query API client.
 
-*Requires `aio` extra to be enabled.*
+*Requires `aio` extra to be installed.*
 
 - async function `query(api_code: APICode, **data_vars: str) -> QueryResponse`
 
