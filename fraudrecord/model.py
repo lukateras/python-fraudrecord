@@ -88,19 +88,16 @@ class QueryResponse(BaseModel):
     API query response.
     """
 
-    value: NonNegativeInt = Field(
-        description=(
-            "The higher it is, the more submitted reports there are and "
-            "the higher their severity is."
-        ),
+    total_points: NonNegativeInt = Field(
+        description="Total sum of points (severity scores) across all submitted reports.",
     )
 
-    count: NonNegativeInt = Field(
+    total_reports: NonNegativeInt = Field(
         description="Total number of the submitted reports.",
     )
 
     reliability: Reliability = Field(
-        description="Result reliability measurement.",
+        description="Result reliability measurement, out of possible 10.",
     )
 
     report_url: HttpUrl = Field(
@@ -123,11 +120,11 @@ class QueryResponse(BaseModel):
                 raise ValueError("Missing/incorrect/deleted/disabled API code.")
             case _:
                 s = s.removeprefix("<report>").removesuffix("</report>")
-                value, count, reliability, report_code = s.split("-")
+                total_points, total_reports, reliability, report_code = s.split("-")
 
                 return QueryResponse(
-                    value=int(value),
-                    count=int(count),
+                    total_points=int(total_points),
+                    total_reports=int(total_reports),
                     reliability=Decimal(reliability),
                     report_url=report_url(report_code),
                 )
@@ -135,16 +132,16 @@ class QueryResponse(BaseModel):
     @root_validator
     def _congruent(cls, values):
         """
-        Makes sure that, if any of value/count/reliability values is zero,
-        the others must be zero as well.
+        Makes sure that, if any of total_points/total_reports/reliability
+        is zero, the others must be zero as well.
         """
-        value = values.get("value")
-        count = values.get("count")
+        total_points = values.get("total_points")
+        total_reports = values.get("total_reports")
         reliability = values.get("reliability", Decimal("NaN"))
 
-        if value == 0 or count == 0 or reliability.is_zero():
+        if total_points == 0 or total_reports == 0 or reliability.is_zero():
             assert (
-                value == 0 and count == 0 and reliability.is_zero()
-            ), "value, count, and reliability may only be 0 together"
+                total_points == 0 and total_reports == 0 and reliability.is_zero()
+            ), "total_points, total_reports, and reliability may only be 0 together"
 
         return values

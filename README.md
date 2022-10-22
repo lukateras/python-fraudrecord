@@ -114,16 +114,15 @@ Concepts of FraudRecord API.
 
   + field `value: NonNegativeInt`
 
-    The higher it is, the more submitted reports there are and the higher
-    their severity is.
+    Total sum of points (severity scores) across all submitted reports.
 
-  + field `count: NonNegativeInt`
+  + field `total_reports: NonNegativeInt`
 
     Total number of the submitted reports.
 
   + field `reliability: Reliability`
 
-    Result reliability measurement.
+    Result reliability measurement, out of possible 10.
 
   + field `report_url: HttpUrl`
 
