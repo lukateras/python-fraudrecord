@@ -47,11 +47,12 @@ API endpoint URL.
 
 def query_url(api_code: APICode, **data_vars: str) -> HttpUrl:
     """
-    Given an API code and non-hashed data variables (as described on
-    <https://fraudrecord.com/developers/> under "Data variables"), returns
-    the corresponding API query URL.
+    Given an API code and non-hashed data variables, returns the corresponding
+    API query URL.
 
-    Data variables are arbitrary. Well-known data variable names are:
+    Data variables are arbitrary bits of information about someone as described
+    on <https://fraudrecord.com/developers/> under "Data variables". Well-known
+    data variable names are:
     - `name`: client's full name
     - `company`: client's company name
     - `email`: client's email address
