@@ -48,7 +48,7 @@ API endpoint URL.
 def query_url(api_code: APICode, **data_vars: str) -> HttpUrl:
     """
     Given an API code and non-hashed data variables, returns the corresponding
-    API query URL.
+    query API URL.
 
     Data variables are arbitrary bits of information about someone as described
     on <https://fraudrecord.com/developers/> under "Data variables". Well-known
@@ -85,7 +85,7 @@ def report_url(report_code: ReportCode) -> HttpUrl:
 
 class QueryResponse(BaseModel):
     """
-    API query response.
+    Query API response.
     """
 
     total_points: NonNegativeInt = Field(
@@ -108,7 +108,7 @@ class QueryResponse(BaseModel):
     @classmethod
     def parse(cls, s: str) -> QueryResponse:
         """
-        Parses the input string containing the API query HTTP response body
+        Parses the input string containing the query API HTTP response body
         into a `QueryResponse` object.
         """
         match (s := s.strip()):

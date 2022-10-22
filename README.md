@@ -85,7 +85,7 @@ Concepts of FraudRecord API.
 - function `query_url(api_code: APICode, **data_vars: str) -> HttpUrl`
 
   Given an API code and non-hashed data variables, returns the corresponding
-  API query URL.
+  query API URL.
 
   Data variables are arbitrary bits of information about someone as described
   on <https://fraudrecord.com/developers/> under "Data variables". Well-known
@@ -110,7 +110,7 @@ Concepts of FraudRecord API.
 
 - class `QueryResponse`
 
-  API query response.
+  Query API response.
 
   + field `value: NonNegativeInt`
 
@@ -132,7 +132,7 @@ Concepts of FraudRecord API.
 
   + class method `parse(s: str) -> QueryResponse`
 
-    Parses the input string containing the API query HTTP response body
+    Parses the input string containing the query API HTTP response body
     into a `QueryResponse` object.
 
 ### `fraudrecord.query`
