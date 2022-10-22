@@ -1,9 +1,9 @@
 """
 FraudRecord hashing scheme as described on <https://fraudrecord.com/security/>.
 
-32,000 rounds of SHA-1. Case- and whitespace- insensitive: the input is
+32,000 iterations of SHA-1. Case- and whitespace- insensitive: the input is
 lowercased and stripped of all whitespace. The hexadecimal digest of each
-previous round is fed into the next round. The input of each round is
+iteration is fed into the next iteration. The input of each iteration is
 prefixed with `fraudrecord-`.
 """
 
