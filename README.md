@@ -44,6 +44,12 @@ if __name__ == "__main__":
     asyncio.run(main())
 ```
 
+Using the CLI:
+
+```sh
+$ FRAUDRECORD_API_CODE=a51ff508c331b7e9 fraudrecord-query --email=example@example.org
+```
+
 ## Documentation
 
 ### `fraudrecord.hash`
@@ -142,6 +148,15 @@ Blocking FraudRecord query API client.
 - function `query(api_code: APICode, **data_vars: str) -> QueryResponse`
 
   Makes a query request to the API and returns a `QueryResponse`.
+
+### `fraudrecord.query.cli`
+
+FraudRecord query API command-line interface.
+
+Usage: `fraudrecord-query --DATA_VARIABLE=VALUE ...`
+
+`FRAUDRECORD_API_CODE` environment variable must be set to a valid FraudRecord
+API code. Get one by signing up with FraudRecord and creating a reporter profile.
 
 ### `fraudrecord.query_aio`
 
