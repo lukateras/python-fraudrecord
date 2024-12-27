@@ -171,24 +171,4 @@ Non-blocking FraudRecord query API client.
 ---
 
 Note that the report submission functionality isn't and won't be implemented.
-I believe that users of FraudRecord violate their clients' privacy, and I don't
-want to be a part of that.
-
-While it's true that FraudRecord only stores hashes of (arbitrary, sensitive)
-data, if you do end up in the database, it lets anyone on the internet easily
-check if their guess of your personal email address, physical address, legal
-name, credit card number, IP address, and such is correct or not as long as
-they know any single one of these bits of information in advance. There is
-no defined limit to the number of guesses they could make.
-
-Moreover, reports themselves are presented in cleartext and frequently contain
-some sensitive data anyway. Here you can see various FraudRecord users posting
-their (ostensibly fraudulent) clients' full names, addresses, and even, in one
-case, a photo of the driver's license: [\[1\]][1], [\[2\]][2], [\[3\]][3].
-I wish I was making it up.
-
-[1]: https://web.archive.org/web/20221020093115/https://www.fraudrecord.com/api/?showreport=f0e0e7544b149849
-[2]: https://web.archive.org/web/20221020093328/https://www.fraudrecord.com/api/?showreport=f17ed61cb427f320
-[3]: https://web.archive.org/web/20221020094049/https://www.fraudrecord.com/api/?showreport=66853df490a28d3d
-
 This API client is intended for privacy research only.
