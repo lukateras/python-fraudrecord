@@ -1,5 +1,11 @@
 # `python-fraudrecord`
 
+FraudRecord Query API client for Python.
+
+Status: maintained, stable, and tested. There will never be any breaking changes.
+
+## Usage
+
 Install from PyPI:
 
 ```sh
@@ -11,10 +17,7 @@ If you will use the non-blocking API, include the `aio` extra:
 $ pip install fraudrecord[aio]
 ```
 
-This package is maintained, stable, and tested. There will never be
-any breaking changes.
-
-## Example
+### Example
 
 Using the blocking API:
 
