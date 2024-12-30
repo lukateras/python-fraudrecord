@@ -130,10 +130,10 @@ class QueryResponse(BaseModel):
                 )
 
     @root_validator
-    def _congruent(cls, values):
+    def _consistent(cls, values):
         """
-        Makes sure that, if any of total_points/total_reports/reliability
-        is zero, the others must be zero as well.
+        Asserts that total_points, total_reports, and reliability are either
+        all zero or all non-zero.
         """
         total_points = values.get("total_points")
         total_reports = values.get("total_reports")
@@ -142,6 +142,6 @@ class QueryResponse(BaseModel):
         if total_points == 0 or total_reports == 0 or reliability.is_zero():
             assert (
                 total_points == 0 and total_reports == 0 and reliability.is_zero()
-            ), "total_points, total_reports, and reliability may only be 0 together"
+            ), "total_points, total_reports, and reliability must be zero together"
 
         return values
