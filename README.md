@@ -11,7 +11,7 @@ If you will use the non-blocking API, include `aio` extra:
 $ pip install fraudrecord[aio]
 ```
 
-This package is maintained, stable, and perpetually tested. There will never be
+This package is maintained, stable, and tested. There will never be
 any breaking changes.
 
 ## Example
