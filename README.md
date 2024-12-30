@@ -147,7 +147,7 @@ Blocking FraudRecord Query API client.
 
 - function `query(api_code: APICode, **data_vars: str) -> QueryResponse`
 
-  Makes a query request to the API and returns a `QueryResponse`.
+  Makes a request to the Query API and returns a `QueryResponse`.
 
 ### `fraudrecord.query.cli`
 
@@ -166,7 +166,7 @@ Non-blocking FraudRecord Query API client.
 
 - async function `query(api_code: APICode, **data_vars: str) -> QueryResponse`
 
-  Makes a query request to the API and returns a `QueryResponse`.
+  Makes a request to the Query API and returns a `QueryResponse`.
 
 ---
 
