@@ -2,7 +2,8 @@
 
 FraudRecord Query API client for Python.
 
-Status: maintained, stable, and tested. There will never be any breaking changes.
+Maintained, stable, and tested as of January 2025. There will never be any
+breaking changes.
 
 ## Usage
 
