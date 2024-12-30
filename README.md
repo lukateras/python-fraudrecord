@@ -1,4 +1,4 @@
-# FraudRecord API client for Python
+# `python-fraudrecord`
 
 Install from PyPI:
 
