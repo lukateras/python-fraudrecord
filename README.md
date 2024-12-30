@@ -81,7 +81,7 @@ FraudRecord data model.
 
 - type `Reliability`
 
-  Result reliability measurement. Decimal; either 0.0 (if there are no submitted
+  Reliability score. Decimal; either 0.0 (if there are no submitted
   reports) or between 1.0 and 10.0 with one digit after the decimal point.
 
 - type `ReportCode`
@@ -133,7 +133,7 @@ FraudRecord data model.
 
   + field `reliability: Reliability`
 
-    Result reliability measurement, out of possible 10.
+    Reliability score out of 10.
 
   + field `report_url: HttpUrl`
 
