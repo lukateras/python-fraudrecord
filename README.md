@@ -13,7 +13,7 @@ Install from PyPI:
 $ pip install fraudrecord
 ```
 
-To use the non-blocking client, include the `aio` extra:
+To use the non-blocking client include the `aio` extra:
 
 ```sh
 $ pip install fraudrecord[aio]
