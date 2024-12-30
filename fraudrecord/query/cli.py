@@ -1,5 +1,5 @@
 """
-FraudRecord query API command-line interface.
+FraudRecord Query API command-line interface.
 
 Usage: `fraudrecord-query --DATA_VARIABLE=VALUE ...`
 

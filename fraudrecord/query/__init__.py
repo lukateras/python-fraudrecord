@@ -1,5 +1,5 @@
 """
-Blocking FraudRecord query API client.
+Blocking FraudRecord Query API client.
 """
 
 from urllib.request import urlopen

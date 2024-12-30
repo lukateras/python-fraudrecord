@@ -48,7 +48,7 @@ API endpoint URL.
 def query_url(api_code: APICode, **data_vars: str) -> HttpUrl:
     """
     Given an API code and non-hashed data variables, returns the corresponding
-    query API URL.
+    Query API URL.
 
     Data variables are arbitrary bits of information about someone as described
     on <https://fraudrecord.com/developers/> under "Data variables". Well-known
@@ -108,12 +108,12 @@ class QueryResponse(BaseModel):
     @classmethod
     def parse(cls, s: str) -> QueryResponse:
         """
-        Parses the input string containing the query API HTTP response body
+        Parses the input string containing the Query API HTTP response body
         into a `QueryResponse` object.
         """
         match (s := s.strip()):
             case "ERR:ACTION" | "NODATA":
-                raise ValueError("Missing/incorrect _action query parameter.")
+                raise ValueError("Missing/incorrect _action parameter.")
             case "ERR:DATA":
                 raise ValueError("Missing/blacklisted data variables.")
             case "ERR:API":

@@ -91,7 +91,7 @@ FraudRecord data model.
 - function `query_url(api_code: APICode, **data_vars: str) -> HttpUrl`
 
   Given an API code and non-hashed data variables, returns the corresponding
-  query API URL.
+  Query API URL.
 
   Data variables are arbitrary bits of information about someone as described
   on <https://fraudrecord.com/developers/> under "Data variables". Well-known
@@ -138,12 +138,12 @@ FraudRecord data model.
 
   + class method `parse(s: str) -> QueryResponse`
 
-    Parses the input string containing the query API HTTP response body
+    Parses the input string containing the Query API HTTP response body
     into a `QueryResponse` object.
 
 ### `fraudrecord.query`
 
-Blocking FraudRecord query API client.
+Blocking FraudRecord Query API client.
 
 - function `query(api_code: APICode, **data_vars: str) -> QueryResponse`
 
@@ -151,7 +151,7 @@ Blocking FraudRecord query API client.
 
 ### `fraudrecord.query.cli`
 
-FraudRecord query API command-line interface.
+FraudRecord Query API command-line interface.
 
 Usage: `fraudrecord-query --DATA_VARIABLE=VALUE ...`
 
@@ -160,7 +160,7 @@ API code. Get one by signing up with FraudRecord and creating a reporter profile
 
 ### `fraudrecord.query_aio`
 
-Non-blocking FraudRecord query API client.
+Non-blocking FraudRecord Query API client.
 
 *Requires `aio` extra to be installed.*
 
