@@ -1,7 +1,7 @@
 """
 Non-blocking FraudRecord Query API client.
 
-*Requires `aio` extra to be installed.*
+*Requires the `aio` extra to be installed.*
 """
 
 import aiohttp

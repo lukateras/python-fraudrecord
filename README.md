@@ -6,7 +6,7 @@ Install from PyPI:
 $ pip install fraudrecord
 ```
 
-If you will use the non-blocking API, include `aio` extra:
+If you will use the non-blocking API, include the `aio` extra:
 ```sh
 $ pip install fraudrecord[aio]
 ```
@@ -162,7 +162,7 @@ API code. Get one by signing up with FraudRecord and creating a reporter profile
 
 Non-blocking FraudRecord Query API client.
 
-*Requires `aio` extra to be installed.*
+*Requires the `aio` extra to be installed.*
 
 - async function `query(api_code: APICode, **data_vars: str) -> QueryResponse`
 
