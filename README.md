@@ -13,7 +13,7 @@ Install from PyPI:
 $ pip install fraudrecord
 ```
 
-To use the non-blocking API, include the `aio` extra:
+To use the non-blocking client, include the `aio` extra:
 
 ```sh
 $ pip install fraudrecord[aio]
@@ -21,7 +21,7 @@ $ pip install fraudrecord[aio]
 
 ### Example
 
-Using the blocking API:
+Using the blocking client:
 
 ```python
 from fraudrecord.query import query as fraudrecord_query
@@ -31,7 +31,7 @@ if __name__ == "__main__":
     print(fraudrecord_query(api_code, email="example@example.org"))
 ```
 
-Using the non-blocking API:
+Using the non-blocking client:
 
 ```python
 import asyncio
