@@ -67,7 +67,7 @@ is prefixed with `fraudrecord-`.
 
 ### `fraudrecord.model`
 
-Concepts of FraudRecord API.
+FraudRecord data model.
 
 - type `APICode`
 

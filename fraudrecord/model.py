@@ -1,5 +1,5 @@
 """
-Concepts of FraudRecord API.
+FraudRecord data model.
 """
 
 from __future__ import annotations
