@@ -13,7 +13,8 @@ Install from PyPI:
 $ pip install fraudrecord
 ```
 
-If you will use the non-blocking API, include the `aio` extra:
+To use the non-blocking API, include the `aio` extra:
+
 ```sh
 $ pip install fraudrecord[aio]
 ```
