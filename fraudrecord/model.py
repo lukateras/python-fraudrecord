@@ -88,15 +88,15 @@ class QueryResponse(BaseModel):
     """
 
     total_points: NonNegativeInt = Field(
-        description="Total sum of points (severity scores) across all submitted reports.",
+        description="Total points (severity scores from 1 to 10 summed across all reports).",
     )
 
     total_reports: NonNegativeInt = Field(
-        description="Total number of the submitted reports.",
+        description="Total reports.",
     )
 
     reliability: Reliability = Field(
-        description="Reliability score out of 10.",
+        description="Reliability score.",
     )
 
     report_url: HttpUrl = Field(

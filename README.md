@@ -123,15 +123,15 @@ FraudRecord data model.
 
   + field `value: NonNegativeInt`
 
-    Total sum of points (severity scores) across all submitted reports.
+    Total points (severity scores from 1 to 10 summed across all reports).
 
   + field `total_reports: NonNegativeInt`
 
-    Total number of the submitted reports.
+    Total reports.
 
   + field `reliability: Reliability`
 
-    Reliability score out of 10.
+    Reliability score.
 
   + field `report_url: HttpUrl`
 
