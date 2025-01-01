@@ -40,7 +40,7 @@ Report code. Lowercase alphanumeric string, 16 characters.
 
 ENDPOINT: Final[HttpUrl] = "https://www.fraudrecord.com/api/?"
 """
-API endpoint URL.
+The API endpoint URL.
 """
 
 

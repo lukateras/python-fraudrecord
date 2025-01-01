@@ -89,7 +89,7 @@ FraudRecord data model.
 
 - constant `ENDPOINT: HttpUrl`
 
-  API endpoint URL.
+  The API endpoint URL.
 
 - function `query_url(api_code: APICode, **data_vars: str) -> HttpUrl`
 
