@@ -93,7 +93,7 @@ FraudRecord data model.
 
 - function `query_url(api_code: APICode, **data_vars: str) -> HttpUrl`
 
-  Given an API code and non-hashed data variables, returns the corresponding
+  Given an API code and (non-hashed) data variables, returns the corresponding
   Query API URL.
 
   Data variables are arbitrary bits of information about someone as described
