@@ -80,7 +80,7 @@ FraudRecord data model.
 
 - type `Reliability`
 
-  Reliability score. Decimal; either 0.0 (if there are no reports submitted) or
+  Reliability score. Decimal; either 0.0 (if no reports have been submitted) or
   within 1.0 and 10.0 with one digit after the decimal point.
 
 - type `ReportCode`
