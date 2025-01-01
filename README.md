@@ -85,8 +85,7 @@ FraudRecord data model.
 
 - type `ReportCode`
 
-  Report code. Lowercase alphanumeric string, 16 characters. Used in order to
-  fetch a human-readable report.
+  Report code. Lowercase alphanumeric string, 16 characters.
 
 - constant `ENDPOINT: HttpUrl`
 

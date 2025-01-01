@@ -35,8 +35,7 @@ between 1.0 and 10.0 with one digit after the decimal point.
 
 ReportCode = _Code
 """
-Report code. Lowercase alphanumeric string, 16 characters. Used in order to
-fetch a human-readable report.
+Report code. Lowercase alphanumeric string, 16 characters.
 """
 
 ENDPOINT: Final[HttpUrl] = "https://www.fraudrecord.com/api/?"
