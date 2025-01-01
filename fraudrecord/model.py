@@ -112,7 +112,7 @@ class QueryResponse(BaseModel):
         """
         match (s := s.strip()):
             case "ERR:ACTION" | "NODATA":
-                raise ValueError("Missing/incorrect _action parameter.")
+                raise ValueError("Missing/incorrect action parameter.")
             case "ERR:DATA":
                 raise ValueError("Missing/blacklisted data variables.")
             case "ERR:API":
