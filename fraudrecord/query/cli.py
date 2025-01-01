@@ -62,7 +62,7 @@ def main(
 
     print("Total points:", query_response.total_points, file=out)
     print("Total reports:", query_response.total_reports, file=out)
-    print("Reliability:", query_response.reliability, "out of 10", file=out)
+    print("Reliability:", query_response.reliability, "out of 10.0", file=out)
     print("Report URL:", query_response.report_url, file=out)
     return _EX_OK
 
