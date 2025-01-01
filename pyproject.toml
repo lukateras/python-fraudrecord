@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "fraudrecord"
-version = "2022.10.22"
+version = "2025.01.01"
 description = "FraudRecord Query API client"
 license = "BSD-2-Clause-Patent"
 authors = ["Luka Teras <luka@sdf.org>"]
