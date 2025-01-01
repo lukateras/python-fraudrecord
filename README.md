@@ -63,8 +63,7 @@ FraudRecord hashing scheme as described on <https://fraudrecord.com/security/>.
 
 32,000 iterations of SHA-1. Case- and whitespace- insensitive: the input is
 downcased and stripped of all whitespace. The hexadecimal digest of each
-iteration is fed into the next. The input of each iteration is prefixed with
-`fraudrecord-`.
+iteration is prefixed with `fraudrecord-` and fed into the next.
 
 - function `hexdigest(s: str) -> str`
 
