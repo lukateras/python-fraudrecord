@@ -141,7 +141,7 @@ FraudRecord data model.
 
   + class method `parse(s: str) -> QueryResponse`
 
-    Parses the input string containing the Query API HTTP response body
+    Parses the input string containing the Query API response body
     into a `QueryResponse` object.
 
 ### `fraudrecord.query`
