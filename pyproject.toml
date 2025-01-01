@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "fraudrecord"
 version = "2022.10.22"
-description = "FraudRecord API client"
+description = "FraudRecord Query API client"
 license = "BSD-2-Clause-Patent"
-authors = ["Yana Luna-Terra <yana@riseup.net>"]
+authors = ["Luka Teras <luka@sdf.org>"]
 readme = "README.md"
-repository = "https://github.com/yanalunaterra/fraudrecord-python"
+repository = "https://github.com/lukateras/python-fraudrecord"
 classifiers = [
     "Topic :: Internet :: WWW/HTTP"
 ]
