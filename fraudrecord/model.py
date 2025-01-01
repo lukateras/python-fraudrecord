@@ -116,7 +116,7 @@ class QueryResponse(BaseModel):
             case "ERR:DATA":
                 raise ValueError("Missing/blacklisted data variables.")
             case "ERR:API":
-                raise ValueError("Missing/incorrect/deleted/disabled API code.")
+                raise ValueError("Missing/incorrect/disabled API code.")
             case _:
                 s = s.removeprefix("<report>").removesuffix("</report>")
                 total_points, total_reports, reliability, report_code = s.split("-")
