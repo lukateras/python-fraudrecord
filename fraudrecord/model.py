@@ -141,6 +141,6 @@ class QueryResponse(BaseModel):
         if total_points == 0 or total_reports == 0 or reliability.is_zero():
             assert (
                 total_points == 0 and total_reports == 0 and reliability.is_zero()
-            ), "total_points, total_reports, and reliability must be zero together"
+            ), "total_points, total_reports, and reliability must be all zero or all non-zero"
 
         return values
