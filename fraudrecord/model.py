@@ -52,16 +52,16 @@ def query_url(api_code: APICode, **data_vars: str) -> HttpUrl:
     Data variables are arbitrary bits of information about someone as described
     on <https://fraudrecord.com/developers/> under "Data variables". Well-known
     data variable names are:
-    - `name`: client's full name
-    - `company`: client's company name
-    - `email`: client's email address
-    - `address`: client's postal address
-    - `phone`: client's phone number
-    - `ip`: client's registration IP address
-    - `hostname`: hostname for the client's server
+    - `name`: full name
+    - `company`: company name
+    - `email`: email address
+    - `address`: postal address
+    - `phone`: phone number
+    - `ip`: registration IP address
+    - `hostname`: server hostname
     - `accountuser`: hosting account username
     - `accountpass`: hosting account password
-    - `domain`: client's domain name without `www.`
+    - `domain`: domain name without `www.`
     - `paypalemail`: PayPal email address
     - `ccname`: name on the credit card
     - `ccnumber`: credit card number
