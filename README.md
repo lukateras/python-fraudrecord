@@ -75,8 +75,8 @@ FraudRecord data model.
 
 - type `APICode`
 
-  API code. Lowercase alphanumeric string, 16 characters. Get one by signing up
-  with FraudRecord and creating a reporter profile.
+  API code. Lowercase alphanumeric string of 16 characters. Get one by signing
+  up with FraudRecord and creating a reporter profile.
 
 - type `Reliability`
 
@@ -85,7 +85,7 @@ FraudRecord data model.
 
 - type `ReportCode`
 
-  Report code. Lowercase alphanumeric string, 16 characters.
+  Report code. Lowercase alphanumeric string of 16 characters.
 
 - constant `ENDPOINT: HttpUrl`
 

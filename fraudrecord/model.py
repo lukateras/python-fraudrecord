@@ -23,7 +23,7 @@ _Code = constr(min_length=16, max_length=16, regex="^[a-z0-9]+$")
 
 APICode = _Code
 """
-API code. Lowercase alphanumeric string, 16 characters. Get one by signing up
+API code. Lowercase alphanumeric string of 16 characters. Get one by signing up
 with FraudRecord and creating a reporter profile.
 """
 
@@ -35,7 +35,7 @@ within 1.0 and 10.0 with one digit after the decimal point.
 
 ReportCode = _Code
 """
-Report code. Lowercase alphanumeric string, 16 characters.
+Report code. Lowercase alphanumeric string of 16 characters.
 """
 
 ENDPOINT: Final[HttpUrl] = "https://www.fraudrecord.com/api/?"
