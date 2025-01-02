@@ -100,7 +100,7 @@ class QueryResponse(BaseModel):
     )
 
     report_url: HttpUrl = Field(
-        description="Human-readable report URL.",
+        description="Report URL.",
         example="https://www.fraudrecord.com/api/?showreport=0f5dac5aab7762e6",
     )
 

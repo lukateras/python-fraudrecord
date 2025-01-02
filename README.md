@@ -135,7 +135,7 @@ FraudRecord data model.
 
   + field `report_url: HttpUrl`
 
-    Human-readable report URL.
+    Report URL.
 
     Example: https://www.fraudrecord.com/api/?showreport=0f5dac5aab7762e6
 
