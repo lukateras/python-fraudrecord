@@ -173,5 +173,5 @@ Non-blocking FraudRecord Query API client.
 
 ---
 
-Note that the Report API client isn't and won't be implemented. This package is
-intended for privacy research only.
+This package is intended for privacy research only. Reporting isn't and won't
+be implemented.
