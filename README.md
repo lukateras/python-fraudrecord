@@ -121,7 +121,7 @@ FraudRecord data model.
 
   Query API response.
 
-  + field `value: NonNegativeInt`
+  + field `total_points: NonNegativeInt`
 
     Total points (severity scores from 1 to 10 summed across all reports).
 
