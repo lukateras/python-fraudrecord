@@ -28,7 +28,7 @@ from fraudrecord.query import query as fraudrecord_query
 
 if __name__ == "__main__":
     api_code = "a51ff508c331b7e9" # XXX: use your own
-    print(fraudrecord_query(api_code, email="example@example.org"))
+    print(fraudrecord_query(api_code, email="example@example.com"))
 ```
 
 Using the non-blocking client:
@@ -41,7 +41,7 @@ from fraudrecord.query_aio import query as fraudrecord_query
 
 async def main():
     api_code = "a51ff508c331b7e9" # XXX: use your own
-    response = await fraudrecord_query(api_code, email="example@example.org")
+    response = await fraudrecord_query(api_code, email="example@example.com")
     print(response)
 
 
@@ -52,7 +52,7 @@ if __name__ == "__main__":
 Using the CLI:
 
 ```sh
-$ FRAUDRECORD_API_CODE=a51ff508c331b7e9 fraudrecord-query --email=example@example.org
+$ FRAUDRECORD_API_CODE=a51ff508c331b7e9 fraudrecord-query --email=example@example.com
 ```
 
 ## Documentation

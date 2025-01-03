@@ -26,8 +26,8 @@ def _getenv(key, err=sys.stderr):
 
 def _splat_equals_args(args):
     """
-    >>> _splat_equals_args(['--ip=127.0.0.1', '--email', 'example@example.org'])
-    ['--ip', '127.0.0.1', '--email', 'example@example.org']
+    >>> _splat_equals_args(['--ip=127.0.0.1', '--email', 'example@example.com'])
+    ['--ip', '127.0.0.1', '--email', 'example@example.com']
     """
     args = [arg.split("=", 1) if arg.startswith("-") else [arg] for arg in args]
     return list(itertools.chain.from_iterable(args))
