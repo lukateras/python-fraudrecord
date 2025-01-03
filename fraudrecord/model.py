@@ -107,8 +107,8 @@ class QueryResponse(BaseModel):
     @classmethod
     def parse(cls, s: str) -> QueryResponse:
         """
-        Parses the input string containing a Query API response body
-        into a `QueryResponse` object.
+        Parses the input string containing a Query API response body into a
+        `QueryResponse` object.
         """
         match (s := s.strip()):
             case "ERR:ACTION" | "NODATA":
